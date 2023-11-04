@@ -1,0 +1,27 @@
+.formSignUp {
+    margin: 20px 0 !important;
+}
+.logIn-hero-items.logIn.signUp {
+    gap: 10px;
+}
+.logIn-hero-items.logIn-signUp.logInSignUp {
+    margin-top: 60px;
+}
+@media only screen and (max-width: 1250px) {
+    .logIn-hero-items.logIn.signUp {
+        padding-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .logIn-hero-items.logIn.signUp {
+        gap: 20px;
+    }
+    .logIn-hero-items.logIn-signUp.logInSignUp {
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .logIn-hero-items.logIn-signUp.logInSignUp {
+        margin-top: 0;
+    }
+}

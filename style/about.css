@@ -1,0 +1,286 @@
+.heroAbout, .heroAbout-headingWrapper, .aboutVideo, .aboutFriend {
+  width: 100%;
+}
+.heroAbout-heading-span, .questionAbout-answer-span {
+  text-transform: uppercase;
+  animation: colors 3s infinite linear;
+}
+.heroAbout, .questionAbout-wrapper, .aboutAccount-wrapper, .aboutFriend {
+  display: flex;
+}
+.heroAbout, .aboutAccount-wrapper, .aboutFriend {
+  align-items: center;
+}
+.questionAbout-wrapper, .aboutAccount-wrapper{
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.heroAbout, .aboutFriend{
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.questionAbout-wrapper h1, .aboutAccount-item.text h1{
+  font-size: 1.5rem;
+}
+.aboutAccount-item.heading h1, .aboutFriend-spam {
+  color: hotpink;
+}
+.heroAbout {
+  background-image: url(../img/heroAboutBcg.jpg);
+  height: 100vh;
+  justify-content: start;
+}
+.heroAbout-headingWrapper {
+  height: auto;
+}
+.heroAbout-heading {
+  width: 40%;
+}
+.heroAbout-heading h1 {
+  font-size: 2.5rem;
+  animation: rotate 8s infinite linear;
+  padding-left: 30px;
+}
+.questionAbout-wrapper {
+  background-image: linear-gradient(to right, #1D0C5C, #E800C6);
+  padding: 20px 80px;
+  align-content: stretch;
+  height: 200px;
+  gap: 50px;
+}
+.questionAbout-question {
+  text-align: left;
+}
+.questionAbout-question h1 {
+  font-size: 1.8rem;
+}
+.questionAbout-answer {
+  text-align: right;
+}
+.aboutVideo {
+  background-color: #1D0C5C;
+}
+.aboutAccount-wrapper {
+  background-image: linear-gradient(to bottom, #E800C6, #1D0C5C);
+  align-content: center;
+  text-align: center;
+  padding: 60px 80px;
+  gap: 80px;
+  height: 500px;
+}
+.aboutAccount-item-span {
+  text-transform: uppercase;
+}
+.aboutFriend {
+  height: 700px;
+  background-image: url(../img/aboutFriendBcg.jpg);
+  justify-content: left;
+}
+.aboutFriend-heading {
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 20px 30px;
+  line-height: 50px;
+}
+.aboutFriend-spam {
+  text-transform: uppercase;
+}
+@keyframes colors {
+  0% {
+    color: white;
+  }
+
+  25% {
+    color: RosyBrown;
+  }
+
+  50% {
+    color:  DarkOrchid;
+  }
+
+  75% {
+    color: MidnightBlue;
+  }
+
+  100% {
+    color:  Orchid;
+  }
+
+}
+@keyframes rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .heroAbout-heading h1 {
+    font-size: 2rem;
+  }
+  .questionAbout-wrapper {
+    padding: 20px 60px;
+  }
+  .questionAbout-wrapper h1{
+    font-size: 1.4rem;
+  }
+  .aboutAccount-wrapper {
+    gap: 60px;
+  }
+  .aboutFriend-heading h1 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .heroAbout-heading h1 {
+    font-size: 1.6rem;
+  }
+  .questionAbout-wrapper {
+    padding: 20px 40px;
+  }
+  .aboutAccount-item.text h1 {
+    font-size: 1.4rem;
+  }
+  .aboutFriend-heading h1 {
+    font-size: 1.6rem;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .heroAbout-heading h1 {
+    font-size: 1.5rem;
+  }
+  .questionAbout-wrapper h1{
+    font-size: 1.2rem;
+  }
+  .aboutAccount-item.text h1 {
+    font-size: 1rem;
+  }
+  .aboutAccount-wrapper {
+    gap: 40px;
+    padding: 40px;
+    height: 400px;
+  }
+  .aboutAccount-item.heading h1 {
+    font-size: 1.8rem;
+  }
+  .aboutFriend {
+    height: 350px;
+  }
+  .aboutFriend-heading h1 {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .questionAbout-wrapper h1{
+    font-size: 1rem;
+  }
+  .aboutAccount-item.text h1 {
+    font-size: 1rem;
+  }
+  .aboutAccount-wrapper {
+    gap: 30px;
+    padding: 10px;
+    height: 300px;
+  }
+  .aboutAccount-item.heading h1 {
+    font-size: 1.6rem;
+  }
+  .aboutFriend {
+    height: 300px;
+  }
+  .aboutFriend-heading h1 {
+    font-size: 1rem;
+  }
+  .questionAbout-wrapper {
+    padding: 10px 20px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .aboutAccount-item.heading h1 {
+    font-size: 1.2rem;
+  }
+  .aboutAccount-item.text h1 {
+    font-size: 0.6rem;
+  }
+  .aboutAccount-wrapper {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .heroAbout-heading {
+    width: 80%;
+  }
+  .aboutAccount-item.heading h1 {
+    font-size: 1.2rem;
+  }
+  .aboutAccount-item.text h1 {
+    font-size: 0.6rem;
+  }
+  .questionAbout-wrapper {
+    padding: 5px 15px;
+    gap: 40px;
+  }
+  .aboutFriend {
+    height: 250px;
+  }
+  .aboutFriend-heading {
+    padding: 10px 20px;
+  }
+  .aboutFriend-heading h1 {
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .heroAbout {
+    background-image: url(../img/aboutSmall.jpg);
+  }
+  .heroAbout-headingWrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff40;
+    height: 30%;
+    justify-self: center;
+    box-shadow: inset #810047 0 0 1pc 0pc;
+  }
+  .heroAbout-heading {
+    width: 80%;
+  }
+  .heroAbout-heading h1 {
+    animation: none;
+    padding: 0;
+    text-align: center;
+    color: #010e31;
+  }
+  .questionAbout-wrapper {
+    height: 150px;
+  }
+  .questionAbout-wrapper h1 {
+    font-size: 0.8rem;
+  }
+  .aboutAccount-item.heading h1 {
+    font-size: 1rem;
+  }
+  .aboutAccount-item.text h1 {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .heroAbout-heading h1 {
+    font-size: 1.2rem;
+  }
+  .questionAbout-wrapper h1 {
+    font-size: 0.8rem;
+  }
+  .aboutAccount-item.heading h1 {
+    font-size: 0.8rem;
+  }
+  .aboutAccount-item.text h1 {
+    font-size: 0.4rem;
+  }
+  .aboutAccount-wrapper {
+    height: 200px;
+  }
+}

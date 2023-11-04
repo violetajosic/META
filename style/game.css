@@ -1,0 +1,174 @@
+.heroGame-wrapper, .heroGame-gameWrapper, .heroGame-textHeading, .heroGame-text, .heroGame-characteristics, label.checkboxCharacteristic {
+    display: flex;
+}
+.heroGame-wrapper, .heroGame-text, .heroGame-characteristics {
+    flex-direction: column;
+}
+.heroGame-wrapper, .heroGame-text {
+    justify-content: center;
+}
+.heroGame-wrapper, .heroGame-gameWrapper, label.checkboxCharacteristic {
+    align-items: center;
+}
+.heroGame-gameWrapper, label.checkboxCharacteristic{
+    flex-direction: row;
+}
+.heroGame-text, .heroGame-characteristics {
+    align-items: flex-start;
+}
+.heroGame-heading span, .heroGame-textHeading h1{
+    color: hotpink;
+}
+.heroGame-wrapper {
+    margin-top: 150px;
+    padding: 20px;
+    gap: 80px;
+}
+.heroGame-gameWrapper {
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.heroGame-heading span{
+    text-transform: uppercase;
+}
+.heroGame-game img{
+    height: 600px;
+    border: 5px white solid;
+    border-radius: 30px;
+    box-shadow: white 0 0 20px 6px;
+}
+.heroGame-textHeading {
+    flex-wrap: wrap;
+    text-align: left;
+}
+.heroGame-textHeading h1 {
+    font-size: 1.4rem;
+}
+.heroGame-textHeading span {
+    color: white;
+}
+.heroGame-text {
+    align-content: center;
+    gap: 30px;
+    flex: 0.5;
+}
+label.checkboxCharacteristic {
+    justify-content: flex-start;
+}
+input.characteristic {
+    margin: 0 10px 0 0;
+}
+@media only screen and (max-width: 1440px) {
+    .heroGame-wrapper {
+        margin-top: 100px;
+        gap: 50px;
+    }
+    .heroGame-heading {
+        font-size: 0.7rem;
+    }
+    .heroGame-textHeading h1 {
+        font-size: 1rem;
+    }
+    .heroGame-game img{
+        height: 500px;
+    }
+    .heroGame-gameWrapper {
+        gap: 60px;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    label.checkboxCharacteristic {
+        font-size: 0.8rem;
+    }
+    .heroGame-game img{
+        height: 450px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .wrapper.mainWrapperGame {
+        height: 100vh;
+    }
+    .heroGame-game img{
+        height: 350px;
+    }
+    .heroGame-heading h1 {
+        font-size: 0.9rem !important;
+    }
+    .heroGame-textHeading h1 {
+        font-size: 0.8rem;
+    }
+    label.checkboxCharacteristic {
+        font-size: 0.6rem;
+    }
+    .heroGame-text {
+        gap: 20px;
+    }
+    .heroGame-wrapper {
+        gap: 40px;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .heroGame-game img{
+        height: 300px;
+    }
+    .heroGame-heading h1 {
+        font-size: 0.8rem !important;
+    }
+    .heroGame-textHeading h1 {
+        font-size: 0.7rem;
+    }
+    .heroGame-gameWrapper {
+        gap: 50px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .heroGame-game img{
+        height: 250px;
+    }
+    label.checkboxCharacteristic {
+        font-size: 0.5rem;
+    }
+    .heroGame-gameWrapper {
+        gap: 30px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .heroGame-game img{
+        height: 250px;
+    }
+    .heroGame-textHeading h1 {
+        font-size: 0.5rem;
+    }
+    label.checkboxCharacteristic {
+        font-size: 0.5rem;
+    }
+    .heroGame-gameWrapper {
+        gap: 30px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .heroGame-heading h1 {
+        text-align: center;
+        font-size: 0.7rem !important;
+    }
+    .heroGame-textHeading h1 {
+        font-size: 0.4rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .heroGame-gameWrapper {
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .heroGame-heading h1 {
+        font-size: 0.6rem !important;
+    }
+    label.checkboxCharacteristic {
+        font-size: 0.4rem;
+    }
+}
+
+

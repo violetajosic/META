@@ -1,0 +1,192 @@
+.logIn-wrapper, .logIn-hero, .logIn-hero-items, .logIn-hero-items-form, .logIn-hero-items.logIn, .checkboxLabel, .logIn-signUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logIn-hero, .logIn-hero-items, .logIn-hero-items-form, .checkboxLabel {
+    width: 100%;
+}
+.logIn-hero-items, .logIn-hero-items-form, .logIn-signUp{
+    flex-direction: column;
+}
+.logIn-hero, .checkboxLabel {
+    flex-direction: row;
+}
+.logIn-hero-items-form button, .checkboxLabel{
+    margin-top: 20px;
+}
+.logIn-hero-items h1, .logIn-hero-items-heading p {
+    text-transform: uppercase;
+}
+.logIn-hero-items h1, label p {
+    color: rgb(241, 44, 143);
+}
+.logIn-wrapper {
+    height: 100vh;
+}
+.logIn-page {
+    background-color: #0000005e !important;
+    width: 60% !important;
+}
+.logIn-hero-items {
+    height: auto;
+    gap: 0;
+    text-align: center;
+}
+.logIn-hero-items-form {
+    margin: 100px 0;
+}
+.logIn-hero-items-form button {
+    align-self: center;
+}
+.logIn-hero-items-heading p {
+    padding-top: 10px;
+}
+.logIn-hero-items.logIn {
+    padding: 80px 0;
+    background-color: #f098d7 !important;
+}
+.logIn-hero-items img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+label p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+input {
+    height: 50px;
+    width: 80%;
+    color: hotpink;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: 2px hotpink solid;
+}
+.checkboxLabel {
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox {
+    margin-left: 20px;
+    margin-bottom: 0;
+    height: 15px;
+    width: 5%;
+}
+.logInButton {
+    width: 50%;
+    margin-top: 10px;
+}
+.logIn-signUp {
+    margin: 40px 0 10px 0;
+}
+.logIn-signUp h1 {
+    font-size: 0.7rem;
+    color: white;
+    font-weight: normal;
+}
+.logIn-signUp-btn {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+@media only screen and (max-width: 1350px) {
+    .logIn-hero-items.logo img {
+        height: 200px;
+    }
+    .logIn-hero-items h1 {
+        font-size: 1.8rem;
+    }
+    .logIn-hero-items-heading h1 {
+        font-size: 1.4rem;
+    }
+    .logIn-hero-items-heading p, .logIn-signUp-btn {
+        font-size: 0.7rem;
+    }
+    .logIn-hero-items-form {
+        margin-top: 150px;
+    }
+    label p{
+        font-size: 1rem;
+    }
+    .checkboxLabel {
+        font-size: 0.8rem;
+    }
+    input {
+        height: 45px;
+    }
+    .logIn-signUp h1 {
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .logIn-hero-items h1 {
+        font-size: 1.6rem;
+    }
+    .logIn-signUp h1 {
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .logIn-page {
+        width: 80% !important;
+    }
+    .logIn-hero-items-heading h1 {
+        font-size: 1.2rem;
+    }
+    .logIn-hero-items-heading p, .logIn-signUp-btn {
+        font-size: 0.6rem;
+    }
+    .logIn-hero-items-form {
+        margin-top: 150px;
+    }
+    label p{
+        font-size: 0.8rem;
+    }
+    .checkboxLabel {
+        font-size: 0.7rem;
+    }
+    input {
+        height: 40px;
+    }
+    .logIn-signUp h1 {
+        font-size: 0.4rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .logIn-page {
+        width: 90% !important;
+    }
+    .logIn-hero-items.logIn {
+        height: auto;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .logIn-hero-items.logIn {
+        height: 65vh;
+    }
+    .logIn-wrapper {
+        display: block !important;
+    }
+    .logIn-page {
+        width: 100% !important;
+    }
+    .logIn-hero {
+        flex-direction: column;
+    }
+    .logIn-hero-items {
+        width: 100%;
+        height: auto;
+    }
+    .logIn-hero-items, .logIn-hero-items.logIn {
+        padding: 20px 0;
+    }
+    .logIn-hero-items-form {
+        margin: 50px 0;
+    }
+    .logIn-hero-items.logIn-signUp {
+        margin: 0;
+    }
+}

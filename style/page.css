@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Michroma', sans-serif;
+    color: white;
+    word-spacing: 3px;
+}
+body {
+    background-image: url(../img/indexBodyBcg.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.page {
+    position: relative;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 20px 4px black;
+    display: grid;
+    grid-template-rows: auto;
+
+}
+.page.blue {
+    background-color: #1d0c5c !important;
+}
+button  {
+    cursor: pointer;
+    background-color: hotpink;
+    font-size: 1.4rem;
+    box-shadow: inset 0 0 8px 1px #9f0351;
+    padding: 10px;
+}
+.profileBtn {
+    align-self: flex-end;
+    border-radius: 10px;
+}
+button:hover {
+    color: #1d0c5c;
+    border: 1px #1d0c5c solid;
+    box-shadow: inset #1d0c5c 0 0 8px 1px;
+    background-color: lightblue;
+}
+.findFriendBtn {
+    align-self: self-end;
+}
+@media only screen and (max-width: 1440px) {
+    button { 
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    button {
+        font-size: 0.8rem;
+    }
+    .findFriendBtn {
+        align-self: normal;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .page {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .findFriendBtn {
+        font-size: 0.6rem !important;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .page {
+        width: 100%;
+    }
+    button {
+        font-size: 0.6rem;
+        padding: 4px 6px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .findFriendBtn {
+        font-size: 0.5rem !important;
+    }
+}

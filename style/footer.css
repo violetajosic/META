@@ -1,0 +1,103 @@
+.footer, .footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    height: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(#ffff 50%, hotpink);
+  }
+.footer ul{
+    gap: 150px;
+    padding: 0 10px;
+}  
+.footer ul li{
+    word-spacing: 5px;
+    list-style: none;
+    text-align: center;
+ }
+.footer ul li a{
+    text-decoration: none;
+    color: #1D0C5C;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+.footer.gradient-blue {
+    padding-top: 50px;
+    background-image: linear-gradient(to bottom, #1d0c5c, hotpink);
+}
+.footer.gradient-blue li a {
+    color: white !important;
+}
+.footer.gradient-blue span:hover {
+    color: #1d0c5c;
+}
+.footer.gradient-pink {
+    background-image: linear-gradient(to bottom, #E800C6, white);
+    margin: 0;
+    padding: 20px 0;
+}
+.footer.profile {
+    background: #647c9b !important;
+    margin: 0 !important;
+    padding: 20px !important;
+}
+.footer.profile p {
+    letter-spacing: 1px;
+}
+.page-items.footer-grid {
+    display: grid;
+    align-items: end;
+}
+@media only screen and (max-width: 1440px) {
+    .footer ul li a, .footer.profile p {
+        font-size: 0.8rem;
+    }
+    .footer-location {
+        margin-top: 20px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .footer {
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .footer ul li a, .footer.profile p {
+        font-size: 0.5rem;
+    }
+    .footer-location {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+  }
+  @media only screen and (max-width: 675px) {
+    .footer {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer ul {
+        gap: 0;
+        flex-direction: column;
+    }
+    .footer ul li a, .footer.profile p {
+        font-size: 0.4rem;
+    }
+    .footer.gradient-pink {
+        padding: 5px 0 !important;
+    }
+    .footer-help {
+        margin-top: 0 !important;
+        padding-top: 10px !important;
+    }
+    .footer-location {
+        padding-top: 10px !important;
+    }
+  }

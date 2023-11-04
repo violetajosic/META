@@ -1,0 +1,88 @@
+.terms-wrapper, .terms-termsHeading, .terms-privacyPolicy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.terms-wrapper {
+    padding: 200px 100px 50px 100px;
+    gap: 50px;
+}
+.terms-termsHeading, .terms-privacyPolicy {
+    width: 100%;
+    gap: 30px;
+}
+.terms-termsHeading h1, .terms-privacyPolicy h1 {
+    text-transform: uppercase;
+    color: hotpink !important;
+    font-size: 2rem;
+}
+.terms-termsHeading p, .terms-privacyPolicy p {
+    font-size: 1rem;
+    text-align: justify;
+}
+.terms-privacyPolicy h1 {
+    align-self: flex-start;
+}
+@media only screen and (max-width: 1440px) {
+    .terms-termsHeading h1, .terms-privacyPolicy h1 {
+        font-size: 1.4rem;
+    }
+    .terms-termsHeading p, .terms-privacyPolicy p {
+        font-size: 0.8rem;
+    }
+    .terms-wrapper {
+        padding:  160px 80px 20px 80px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .wrapper.mainWrapperTerms {
+        height: 100vh;
+    }
+    .terms-termsHeading h1, .terms-privacyPolicy h1 {
+        font-size: 1.2rem;
+    }
+    .terms-termsHeading p, .terms-privacyPolicy p {
+        font-size: 0.6rem;
+    }
+    .terms-wrapper {
+        padding: 140px 60px 10px 60px;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .terms-wrapper {
+        padding: 120px 40px 10px 40px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .terms-privacyPolicy h1 {
+        align-self: center;
+    }
+    .terms-termsHeading h1, .terms-privacyPolicy h1 {
+        font-size: 1rem;
+    }
+    .terms-termsHeading p, .terms-privacyPolicy p {
+        font-size: 0.5rem;
+    }
+    .terms-wrapper {
+        padding: 100px 40px 10px 40px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .terms-termsHeading h1, .terms-privacyPolicy h1 {
+        font-size: 0.6rem;
+    }
+    .terms-termsHeading p, .terms-privacyPolicy p {
+        font-size: 0.4rem;
+    }
+    .terms-wrapper {
+        padding: 90px 30px 0 30px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .terms-wrapper {
+        padding: 90px 20px 0 20px;
+    }
+}

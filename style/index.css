@@ -1,0 +1,222 @@
+.heroIndex, .heroIndex-headingWrapper, .heroIndex-heading, .heroIndex-button, .gameWrapper, .pinkLineWrapper, .triangleWrapper {
+    width: 100%;
+}
+.heroIndex, .heroIndex-headingWrapper, .heroIndex-headingButton, .gameWrapper, .gameWrapper-headingButton, .gameWrapper-button, .pinkLineWrapper-headingHelp, .triangleWrapper  {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.heroIndex, .pinkLineWrapper, .triangleWrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heroIndex, .gameWrapper {
+    justify-content: flex-start;
+}
+.heroIndex-headingWrapper, .pinkLineWrapper-headingHelp {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.heroIndex-headingButton, .gameWrapper-headingButton{
+    flex-direction: column;
+}
+.heroIndex-headingButton, .gameWrapper-button, .triangleWrapper {
+    justify-content: center;
+}
+.heroIndex-heading h1, .triangleWrapper-headingWrapper h1 a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+.heroIndex {
+    height: 100vh;
+    padding-bottom: 140px;
+    background-image: url(../img/heroIndexBcg.jpg);
+    align-content: flex-start;
+}
+.heroIndex-headingWrapper {
+    padding-right: 180px;
+    height: 65%;
+}
+.heroIndex-heading h1 {
+    font-size: 5rem;
+}
+.heroIndex-heading, .heroIndex-button {
+    text-align: center;
+}
+.gameWrapper {
+    height: 200px;
+    position: absolute;
+    top: 900px;
+}
+.gameWrapper-headingButton {
+    padding-left: 50px;
+    gap: 30px;
+}
+.gameWrapper-heading h1 {
+    font-size: 1.8rem;
+    color: #1d0c5c;
+}
+.pinkLineWrapper {
+    background-image: url(../img/pinkLineBcg.png);
+    background-color: white;
+    height: 700px;
+}
+.pinkLineWrapper-headingHelp {
+    align-content: center;
+    padding: 300px 200px 0 0;
+    gap: 30px;
+}
+.pinkLineWrapper-heading h1 {
+    color: #1d0c5c !important;
+    font-size: 1.5rem;
+}
+.triangleWrapper {
+    height: 760px;
+    background-image: url(../img/triangleBcg.jpg);
+}
+.triangleWrapper-headingWrapper {
+    padding: 0 20px 150px 0;
+}
+.triangleWrapper-headingWrapper h1 a {
+    font-size: 2rem !important;
+}
+.triangleWrapper-headingWrapper h1 a:hover {
+    color: hotpink;
+}
+.triangleWrapper-headingWrapper h1:hover {
+    animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  @media only screen and (max-width: 1440px) {
+    .heroIndex-heading h1 {
+        font-size: 4rem;
+    }
+    .heroIndex-headingWrapper {
+        padding-right: 130px;
+    }
+    .gameWrapper {
+        top: 800px;
+    }
+    .gameWrapper-heading h1{
+        font-size: 1.2rem;
+    }
+    .pinkLineWrapper {
+        height: 550px;
+    }
+    .pinkLineWrapper-headingHelp {
+        padding: 230px 100px 0 0;
+    }
+    .triangleWrapper {
+        height: 700px !important;
+    }
+    .triangleWrapper-headingWrapper h1 a{
+        font-size: 1.6rem !important;
+    }
+    .gameWrapper-headingButton {
+        padding-left: 20px !important;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .heroIndex {
+        padding-bottom: 0;
+    }
+    .heroIndex-heading h1 {
+        font-size: 3rem;
+    }
+    .heroIndex-headingButton {
+        padding-bottom: 100px;
+    }
+    .heroIndex-headingWrapper {
+        padding-right: 70px;
+    }
+    .gameWrapper {
+        top: 680px;
+    }
+    .gameWrapper-headingButton {
+        padding-left: 30px;
+    }
+    .gameWrapper-heading h1, .pinkLineWrapper-heading h1{
+        font-size: 1rem;
+    }
+    .pinkLineWrapper {
+        height: 400px;
+        justify-content: flex-end;
+    }
+    .pinkLineWrapper-headingHelp {
+        padding: 150px 80px 0 0;
+    }
+    .triangleWrapper {
+        height: 400px !important;
+    }
+    .triangleWrapper-headingWrapper {
+        padding: 0 10px 50px 0;
+    }
+    .triangleWrapper-headingWrapper h1 a{
+        font-size: 1.4rem !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .heroIndex-headingWrapper {
+        padding-right: 40px;
+    }
+    .gameWrapper {
+        top: 580px;
+    }
+    .pinkLineWrapper {
+        height: 350px;
+    }
+    .pinkLineWrapper-headingHelp {
+        padding-top: 150px;
+    }
+    .triangleWrapper {
+        height: 350px !important;
+    }
+    .triangleWrapper-headingWrapper {
+        padding-bottom: 70px;
+    }
+}
+@media only screen and (max-width: 652px) {
+    .heroIndex-headingWrapper {
+        padding-right: 20px;
+    }
+    .heroIndex-heading h1 {
+        font-size: 1.6rem;
+    }
+    .gameWrapper {
+        text-align: center;
+        justify-content: center;
+    }
+    .gameWrapper-heading h1 {
+        font-size: 0.8rem;
+    }
+    .gameWrapper-headingButton {
+        padding-left: 0;
+        gap: 10px;
+    }
+    .pinkLineWrapper {
+        height: 300px;     
+    }
+    .pinkLineWrapper-heading h1 {
+        font-size: 0.8rem;
+    }
+    .pinkLineWrapper-headingHelp {
+        gap: 10px;
+        padding: 120px 20px 0 0;
+    }
+    .triangleWrapper {
+        height: 300px;
+    }
+    .triangleWrapper-headingWrapper h1 a {
+        font-size: 1rem;
+    }
+    .gameWrapper-headingButton {
+        padding-left: 0 !important;
+    }
+}

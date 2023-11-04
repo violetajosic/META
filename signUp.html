@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>META - Sign Up</title>
+    <link rel="stylesheet" a href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" a href="img/logo.png">
+</head>
+
+<body>
+    <div class="wrapper logIn-wrapper" style="height: 100vh;">
+        <div class="page logIn-page">
+            <div class="logIn-hero">
+                <div class="logIn-hero-items logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                    <h1>Sign Up</h1>
+                </div>
+                <div class="logIn-hero-items logIn signUp">
+                    <div class="logIn-hero-items-heading">
+                        <h1>meta</h1>
+                        <p>future is waiting for you</p>
+                    </div>
+                    <form class="logIn-hero-items-form formSignUp">
+                        <label for="uName"><p>First Name</p></label>
+                        <input type="text" class="firstName" placeholder="Enter First Name" name="uName" required>
+                        <label for="uName"><p>Last Name</p></label>
+                        <input type="text" class="lastName" placeholder="Enter Last Name" name="uName" required>
+                        <label for="psw"><p>Password</p></label>
+                        <input type="password" class="password" placeholder="Enter Password" name="psw" required>
+                        <label class="checkboxLabel">
+                            <input type="checkbox" unchecked="unchecked" name="remember" class="checkbox"> Remember me
+                        </label>
+                        <button class="logInButton" id="redirectButton" onclick="signUpBtn()">Sign Up</button>
+                    </form>
+                    <div class="logIn-hero-items logIn-signUp logInSignUp">
+                        <h1>Already have account? Log in.</h1>
+                        <button onclick="window.location.href='logIn.html'" class="logIn-signUp-btn">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>META - Profile</title>
+    <link rel="stylesheet" a href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" a href="img/logo.png">
+</head>
+
+<body>
+    
+
+    <div class="wrapper mainWrapperProfile">
+        <div class="page profilePage">
+            <div class="page-items">
+                <div class="navigation profileNavigation" style="background-color: transparent !important; position: absolute !important;">
+                    <div class="navLogo profileNavLogo">
+                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="nav navAll profileNav" style="background-color: transparent !important;">
+                            <ul>
+                                <li><a href="signUp.html">Log out</a>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-items">
+                <div class="profile-background">
+                        <div class="profileBcgImage">
+                        </div>
+                        <div class="profilePicture-wrapper">
+                            <div class="profilePicture">
+                                <img src="img/profilePics.jpg" alt="Profile picture">
+                            </div>
+                        </div>
+                    </div>
+                        <div class="profile-hero-wrapperAll">
+                            <div class="commentRobot-wrapper">
+                                <div class="profile-hero-wrapper">
+                                    <div class="profile-hero-comment currentBlock">
+                                        <label for="profileHeading">Heading:</label>
+                                            <input type="text" id="profileHeading" name="profileHeading" class="profileStatus" placeholder="Give your status the heading.">
+                                        <label for="profileHeading">Your status:</label>
+                                            <input type="text" id="profileHeading" name="profileStatus" class="profileStatus" placeholder="Write something...">
+                                    </div>
+                                    <div class="profile-hero-comment newBlock" style="display: none;">
+                                        <h1></h1>
+                                        <p></p>
+                                    </div>
+
+                                    <button class="profileBtn" onclick="post()">Post</button>
+                                </div>
+                                <div class="profile-hero-robotSection">
+                                    <div class="robot currentRobot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="page-items footer-grid">
+                <div class="footer profile">
+                    <p>Connect with the future</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script/index.js"></script>
+</body>
+</html>

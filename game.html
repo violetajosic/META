@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>META - Game</title>
+    <link rel="stylesheet" a href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" a href="img/logo.png">
+</head>
+
+<body>
+    
+
+    <div class="wrapper mainWrapperGame">
+        <div class="page blue">
+            <div class="page-items">
+                <div class="navigation" style="background-color: transparent !important; position: absolute !important;">
+                    <div class="navLogo">
+                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="nav navAll" style="background-color: transparent !important;">
+                            <ul>
+                                <li><a href="index.html">home</a>
+                                </li>
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="game.html"><span>game</span></a></li>
+                                <li><a href="terms.html">terms</a></li>
+                                <li><a href="login.html">log in / sign up</a></li>
+                            </ul>
+                            <div class="hrLine">
+                                <hr>
+                            </div>
+                    </div>
+                    
+                </div>
+                <div class="menu">
+                    <div class="navLogo">
+                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><img src="img/menuIcon.png" alt="menu icon"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="game.html">game</a></li>
+                            <li><a href="terms.html">terms</a></li>
+                            <li><a href="login.html">log in / sign up</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-items">
+                <div class="heroGame-wrapper">
+                    <div class="heroGame-heading">
+                        <h1>Who would be your perfect <span>meta</span> friend?</h1>
+                    </div>
+                    <div class="heroGame-gameWrapper">
+                        <div class="heroGame-game">
+                            <img src="img/gamePics.jpg" alt="Game card image" class="friendImage">
+                            <img src="img/anna.jpg" alt="Game card image" style="display: none;" class="friendImage anna">
+                            <img src="img/emma.jpg" alt="Game card image" style="display: none;" class="friendImage emma">
+                            <img src="img/alex.jpg" alt="Game card image" style="display: none;" class="friendImage alex">
+                            <img src="img/petter.jpg" alt="Game card image" style="display: none;" class="friendImage petter">
+                            <img src="img/teo.jpg" alt="Game card image" style="display: none;" class="friendImage teo">
+                            <img src="img/marc.jpg" alt="Game card image" style="display: none;" class="friendImage marc">
+                            <img src="img/nicol.jpg" alt="Game card image" style="display: none;" class="friendImage nicol">
+                            <img src="img/sophia.jpg" alt="Game card image" style="display: none;" class="friendImage sophia">
+                            <img src="img/jackson.jpg" alt="Game card image" style="display: none;" class="friendImage jackson">
+                            <img src="img/olivia.jpg" alt="Game card image" style="display: none;" class="friendImage olivia">
+                        </div>
+                        <div class="heroGame-text">
+                            <div class="heroGame-textHeading">
+                                <h1>Choose your future friend <span>characteristic</span> :</h1>
+                            </div>
+                            <div class="heroGame-characteristics">
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic friendly">Friendly
+                                </label>
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic empathetic">Empathetic
+                                </label>
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic sports">Sports
+                                </label>
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic loyal">Loyal
+                                </label>
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic supportive">Supportive
+                                </label>
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic trustworthy">Trustworthy
+                                </label>
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic honest">Honest
+                                </label>
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic wealthy">Wealthy
+                                </label>
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic introverted">Introverted
+                                </label>
+                                <label class="checkboxCharacteristic">
+                                    <input type="checkbox" unchecked="unchecked" name="characteristic" class="characteristic extroverted">Extroverted 
+                                </label>
+                            </div>
+                            <button onclick="findFriend ()" class="findFriendBtn">Find friend</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-items footer-grid">
+                <div class="footer gradient-blue" style="margin-top: 0 !important;">
+                        <ul>
+                            <li><a href="terms.html"><span>privacy policy</span></a></li>
+                            <li><a href="help.html">help</a></li>
+                            <li><a href="location.html">office locations</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script/index.js"></script>
+</body>
+</html>
